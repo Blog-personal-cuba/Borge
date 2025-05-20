@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog con Artículos Expandibles</title>
+    <title>Blog-Personal</title>
     <style>
         /* Reset y estilos base */
         * {
@@ -14,7 +14,7 @@
         }
         
         body {
-            line-height: 1.6;
+            line-height: 2;
             color: #333;
             background-color: #f9f9f9;
         }
@@ -378,261 +378,122 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">Mi<span>Blog</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="nav-link" data-category="all">Inicio</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="nav-link">Categorías ▼</a>
-                        <div class="dropdown-content">
-                            <a href="#" class="category-link" data-category="viajes">Viajes</a>
-                            <a href="#" class="category-link" data-category="tecnologia">Tecnología</a>
-                            <a href="#" class="category-link" data-category="cocina">Cocina</a>
-                            <a href="#" class="category-link" data-category="lifestyle">Estilo de vida</a>
-                        </div>
-                    </li>
-                    <li><a href="#" class="nav-link">Acerca de</a></li>
-                    <li><a href="#" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Blog-Personal</h1>
     </header>
-    
-    <main class="main-container">
-        <div class="content-area">
-            <!-- Filtro de categorías -->
-            <div class="category-filter">
-                <button class="filter-btn active" data-category="all">Todos</button>
-                <button class="filter-btn" data-category="viajes">Viajes</button>
-                <button class="filter-btn" data-category="tecnologia">Tecnología</button>
-                <button class="filter-btn" data-category="cocina">Cocina</button>
-                <button class="filter-btn" data-category="lifestyle">Estilo de vida</button>
+
+    <main class="main-content">
+        <section class="content-area">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todo</button>
+                <button class="filter-btn" data-category="Embajada de EEUU en Cuba">Embajada de EEUU en Cuba</button>
+                <button class="filter-btn" data-category="Salud">Salud</button>
+                <button class="filter-btn" data-category="Internacional">Internacional</button>
+                <button class="filter-btn" data-category="Cultura">Cultura</button>
+                <button class="filter-btn" data-category="Frases">Frases</button>
             </div>
-            
-            <!-- Contenedor de artículos -->
-            <div class="articles-container">
-                <!-- Artículo 1 - Viajes -->
-                <article data-category="viajes">
-                    <img src="https://source.unsplash.com/random/600x400?mountain" alt="Imagen del artículo" class="article-img">
-                    <div class="article-content">
-                        <span class="article-category">Viajes</span>
-                        <div class="article-meta">
-                            <span>15 Mayo 2023</span>
-                            <span>5 min lectura</span>
-                        </div>
-                        <h2 class="article-title">Mi experiencia en la montaña</h2>
-                        <p class="article-excerpt">Comparto mi aventura de fin de semana escalando montañas y disfrutando de la naturaleza en su máximo esplendor.</p>
-                        <div class="article-full">
-                            <p>El viaje comenzó temprano en la mañana del sábado. Salimos de la ciudad alrededor de las 5 am para llegar al pie de la montaña antes del amanecer. El aire fresco de la mañana y el silencio solo roto por el canto de los pájaros creaban una atmósfera mágica.</p>
-                            <p>La subida fue desafiante pero gratificante. Cada paso nos acercaba más a la cima y las vistas se volvían más impresionantes. A mitad de camino nos encontramos con un pequeño arroyo donde paramos para descansar y reponer energías con unos bocadillos que habíamos preparado.</p>
-                            <p>Al llegar a la cima, la vista era simplemente espectacular. Podíamos ver kilómetros de paisajes verdes, otros picos montañosos en la distancia y un pequeño pueblo en el valle. El esfuerzo había valido completamente la pena.</p>
-                            <p>La bajada fue más rápida pero igual de cautivadora, con el sol comenzando a ponerse y pintando el cielo de tonos naranjas y rosados. Esta experiencia me recordó la importancia de conectar con la naturaleza y salir de la rutina de la ciudad.</p>
-                            <p>Recomiendo completamente esta excursión para cualquiera que disfrute del senderismo. Es importante llevar calzado adecuado, suficiente agua y protección solar. ¡La montaña nos espera!</p>
-                        </div>
-                        <button class="read-more">Leer más</button>
-                    </div>
-                </article>
-                
-                <!-- Artículo 2 - Tecnología -->
-                <article data-category="tecnologia">
-                    <img src="https://source.unsplash.com/random/600x400?computer" alt="Imagen del artículo" class="article-img">
-                    <div class="article-content">
-                        <span class="article-category">Tecnología</span>
-                        <div class="article-meta">
-                            <span>10 Mayo 2023</span>
-                            <span>8 min lectura</span>
-                        </div>
-                        <h2 class="article-title">Nuevas tecnologías que cambiarán el mundo</h2>
-                        <p class="article-excerpt">Un análisis de las tecnologías emergentes que prometen transformar nuestra forma de vivir en los próximos años.</p>
-                        <div class="article-full">
-                            <p>La inteligencia artificial está avanzando a pasos agigantados. Ya no se trata solo de algoritmos que juegan ajedrez, sino de sistemas capaces de crear arte, componer música y hasta escribir código. En los próximos años, veremos cómo la IA se integra en prácticamente todos los aspectos de nuestra vida cotidiana.</p>
-                            <p>La computación cuántica es otra área que promete revoluciones. Aunque todavía está en sus primeras etapas, las computadoras cuánticas podrían resolver problemas que actualmente son imposibles para las computadoras tradicionales, desde el diseño de nuevos materiales hasta la simulación de moléculas para descubrir medicamentos.</p>
-                            <p>La realidad aumentada y virtual están transformando la forma en que interactuamos con la información. Imagina poder aprender a reparar un motor viendo instrucciones superpuestas directamente sobre las piezas, o asistir a conciertos de tus artistas favoritos desde la comodidad de tu sala pero con una experiencia inmersiva.</p>
-                            <p>La biotecnología también está avanzando rápidamente. Las terapias génicas y la medicina personalizada prometen tratamientos más efectivos para enfermedades que hoy son incurables. La impresión 3D de órganos podría resolver el problema de la escasez de donantes.</p>
-                            <p>Estas tecnologías plantean también importantes cuestiones éticas y sociales que debemos considerar. ¿Cómo protegemos la privacidad en un mundo de IA omnipresente? ¿Cómo evitamos que estas tecnologías aumenten la desigualdad? El futuro es emocionante, pero requiere de una reflexión cuidadosa.</p>
-                        </div>
-                        <button class="read-more">Leer más</button>
-                    </div>
-                </article>
-                
-                <!-- Artículo 3 - Cocina -->
-                <article data-category="cocina">
-                    <img src="https://source.unsplash.com/random/600x400?food" alt="Imagen del artículo" class="article-img">
-                    <div class="article-content">
-                        <span class="article-category">Cocina</span>
-                        <div class="article-meta">
-                            <span>5 Mayo 2023</span>
-                            <span>6 min lectura</span>
-                        </div>
-                        <h2 class="article-title">Recetas saludables para el verano</h2>
-                        <p class="article-excerpt">Descubre estas deliciosas y frescas recetas perfectas para los días calurosos de verano.</p>
-                        <div class="article-full">
-                            <h3>Ensalada de quinoa con mango y aguacate</h3>
-                            <p><strong>Ingredientes:</strong></p>
-                            <ul>
-                                <li>1 taza de quinoa cocida</li>
-                                <li>1 mango maduro en cubos</li>
-                                <li>1 aguacate en cubos</li>
-                                <li>1/4 taza de cilantro picado</li>
-                                <li>1/4 taza de cebolla morada finamente picada</li>
-                                <li>Jugo de 1 lima</li>
-                                <li>2 cucharadas de aceite de oliva</li>
-                                <li>Sal y pimienta al gusto</li>
-                            </ul>
-                            <p><strong>Preparación:</strong></p>
-                            <p>Mezcla todos los ingredientes en un tazón grande. Ajusta la sazón con sal y pimienta. Sirve frío. Esta ensalada es perfecta como plato principal ligero o como acompañamiento en barbacoas.</p>
-                            
-                            <h3>Gazpacho de sandía</h3>
-                            <p><strong>Ingredientes:</strong></p>
-                            <ul>
-                                <li>4 tazas de sandía sin semillas y picada</li>
-                                <li>1 pepino pelado y picado</li>
-                                <li>1 pimiento rojo picado</li>
-                                <li>1/4 taza de cebolla picada</li>
-                                <li>2 cucharadas de vinagre de vino tinto</li>
-                                <li>2 cucharadas de aceite de oliva</li>
-                                <li>Sal al gusto</li>
-                            </ul>
-                            <p><strong>Preparación:</strong></p>
-                            <p>Licúa todos los ingredientes hasta obtener una mezcla homogénea. Refrigera por al menos 2 horas antes de servir. Puedes decorar con pequeños cubos de sandía y pepino. Una sopa fría refrescante para los días más calurosos.</p>
-                            
-                            <h3>Helado de plátano vegano</h3>
-                            <p><strong>Ingredientes:</strong></p>
-                            <ul>
-                                <li>3 plátanos maduros congelados</li>
-                                <li>2 cucharadas de cacao en polvo (opcional)</li>
-                                <li>1 cucharadita de extracto de vainilla</li>
-                                <li>Una pizca de canela</li>
-                            </ul>
-                            <p><strong>Preparación:</strong></p>
-                            <p>Procesa los plátanos congelados en una procesadora de alimentos hasta obtener una consistencia cremosa. Añade los demás ingredientes y mezcla bien. Sirve inmediatamente para una textura de helado suave o congela por 1-2 horas para una textura más firme. Un postre saludable y refrescante sin lácteos ni azúcares añadidos.</p>
-                        </div>
-                        <button class="read-more">Leer más</button>
-                    </div>
-                </article>
-            </div>
-        </div>
-        
-        <!-- Sidebar -->
+
+            <article data-category="Embajada de EEUU en Cuba">
+                <h2>Mike de Troya</h2>
+                <img src="1.jpg"
+                <p class="summary">La gestión de Mike Hammer como encargado de negocios de la Embajada de EE.UU. en Cuba ha estado marcada por una agenda intervencionista que viola los principios de soberanía y no injerencia. Sus acciones, disfrazadas de promoción de derechos humanos, ocultan un plan sistemático para desestabilizar el país mediante el apoyo a grupos contrarrevolucionarios y la manipulación del sector religioso. A continuación, se analizan las violaciones y motivos detrás de su estrategia.   <span class="more-text" style="display:none;">👉Violaciones y Actividades Subversivas de Mike Hammer  
+ 🔸️Contacto con grupos contrarrevolucionarios: Hammer ha mantenido reuniones con figuras desacreditadas como José Daniel Ferrer (UNPACU), Félix Navarro y las Damas de Blanco, organizaciones financiadas por la difunta USAID y la NED para simular una "oposición interna" . Estos grupos carecen de respaldo popular y sobreviven gracias a fondos extranjeros, como evidencian los $25 millones destinados a medios subversivos como los difuntos Radio y TV Martí .  
+ 🔸️Uso de redes sociales y diplomacia pública: La Embajada estadounidense divulga encuentros con activistas y familiares de presos políticos, como Andy García Lorenzo y Donaida Pérez, para construir una narrativa de "represión" y presionar al gobierno cubano . Estas acciones son calificadas como parte de un "plan injerencista" para socavar la Revolución .  
+ 🔸️Visitas a provincias en crisis: En contextos de apagones y escasez, Hammer se reúne con líderes religiosos, como el obispo de Pinar del Río, promoviendo la idea de que la Iglesia debe suplir al Estado en labores humanitarias, lo que alimenta la desconfianza hacia las instituciones cubanas .  
+
+👉Motivos detrás del Enfoque en el Sector Religioso  
+️La insistencia de Hammer en interactuar con líderes religiosos no es casual. Históricamente, EE.UU. ha utilizado la religión como herramienta de soft power para desestabilizar gobiernos:  
+ 🔸️Sensibilidad social y legitimidad: Las instituciones religiosas, como la Iglesia Católica o las comunidades yoruba, tienen arraigo en la población. Al presentarse como defensor de la "libertad religiosa", Hammer busca capitalizar su influencia para generar grietas en la unidad nacional .  
+🔸️ Estrategia de división: En otros países, como Nicaragua o Irán, la instrumentalización de conflictos sectarios ha facilitado cambios de régimen. En Cuba, el intento de exacerbar tensiones entre el Estado y grupos religiosos sigue un guion similar .  
+ 🔸️Historial de manipulación: Durante la Guerra Fría, EE.UU. apoyó a grupos religiosos en Europa del Este para erosionar gobiernos socialistas. Hoy, repite la fórmula en Cuba, utilizando figuras como el pastor Lorenzo Rosales Fajardo, excarcelado tras las protestas de 2021, para vincular fe y disidencia .  
+
+👉Historia Global: Religión y Derrocamiento de Gobiernos  
+️El uso de la religión como arma política no es nuevo. Ejemplos históricos revelan patrones que se repiten en Cuba:  
+ 🔸️Revolución Islámica en Irán (1979): EE.UU. apoyó inicialmente al Sha, pero luego sectores religiosos liderados por Jomeini canalizaron el descontento popular para tomar el poder, demostrando cómo la fe puede movilizar masas contra un gobierno .  
+ 🔸️Primavera Árabe (20102013): Grupos islamistas, como la Hermandad Musulmana en Egipto, aprovecharon protestas inicialmente laicas para imponer agendas teocráticas, con respaldo externo de potencias como Arabia Saudí .  
+ 🔸️Golpes en América Latina: En los años 7080, la Iglesia Católica en países como Chile y Argentina fue instrumentalizada para oponerse a gobiernos progresistas, facilitando dictaduras respaldadas por EE.UU. .  
+
+👉Un Guion Renovado de la Guerra Fría  
+La agenda de Mike Hammer en Cuba refleja una estrategia imperialista actualizada, donde la religión y la sociedad civil son instrumentos para justificar sanciones y desestabilización. Al financiar a opositores y explotar símbolos religiosos, EE.UU. busca "debilitar" al gobierno cubano, ignorando el derecho a la autodeterminación. La historia muestra que estas tácticas, lejos de promover libertad, generan caos y sufrimiento, como ocurrió en África bajo la gestión previa de Hammer . La solidaridad internacional debe denunciar estas prácticas y respetar la soberanía de Cuba.  
+
+No al intervencionismo! Respeto para Cuba! Sobra esa Embajada!</span></p>
+                <button class="read-more">Leer más</button>
+            </article>
+        </section>
+
         <aside class="sidebar">
             <div class="about-me">
-                <img src="https://source.unsplash.com/random/200x200?person" alt="Foto del autor" class="profile-img">
+                <img src="Perfil.png" alt="Foto del autor" class="profile-img">
                 <h3 class="sidebar-title">Sobre mí</h3>
-                <p>Hola, soy [Tu Nombre]. Apasionado por escribir y compartir mis experiencias y conocimientos sobre diversos temas.</p>
+                <p>Hola, soy Borge Alex. Apasionado por escribir y compartir mis experiencias y conocimientos sobre diversos temas.</p>
+                <p>Recuerda: Eso de caer bien se lo dejo a los paracaidistas</p>
             </div>
-            
+
             <div class="sidebar-section">
                 <h3 class="sidebar-title">Categorías populares</h3>
                 <ul class="categories-list">
-                    <li><a href="#" class="category-link" data-category="viajes">Viajes</a></li>
-                    <li><a href="#" class="category-link" data-category="tecnologia">Tecnología</a></li>
-                    <li><a href="#" class="category-link" data-category="cocina">Cocina</a></li>
-                    <li><a href="#" class="category-link" data-category="lifestyle">Estilo de vida</a></li>
+                    <li><a href="#" class="category-link" data-category="Embajada de EEUU en Cuba">Embajada de EEUU en Cuba</a></li>
+                    <li><a href="#" class="category-link" data-category="Salud">Salud</a></li>
+                    <li><a href="#" class="category-link" data-category="Internacional">Internacional</a></li>
+                    <li><a href="#" class="category-link" data-category="Cultura">Cultura</a></li>
+                    <li><a href="#" class="category-link" data-category="Frases">Frases</a></li>
                 </ul>
-            </div>
-            
-            <div class="sidebar-section">
-                <h3 class="sidebar-title">Suscríbete</h3>
-                <p>Recibe los nuevos artículos directamente en tu correo.</p>
-                <form>
-                    <input type="email" placeholder="Tu correo electrónico" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: 1px solid #ddd; border-radius: 4px;">
-                    <button type="submit" style="background: #3498db; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; width: 100%;">Suscribirse</button>
-                </form>
             </div>
         </aside>
     </main>
-    
+
     <footer>
         <div class="footer-container">
-            <p>&copy; 2023 Mi Blog Personal. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-twitter">🐦</i></a>
-                <a href="#"><i class="fab fa-instagram">📷</i></a>
-                <a href="#"><i class="fab fa-facebook">👍</i></a>
-                <a href="#"><i class="fab fa-linkedin">💼</i></a>
+                <a href="https://www.facebook.com/share/19mNnEdNhv/"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/borgealex8?igsh=d2FmYTkwcGYzeDB6"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3670/3670151.png" alt="X"></a>
             </div>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Elementos del DOM
             const filterButtons = document.querySelectorAll('.filter-btn');
             const categoryLinks = document.querySelectorAll('.category-link');
-            const navLinks = document.querySelectorAll('.nav-link');
             const articles = document.querySelectorAll('article');
             const readMoreButtons = document.querySelectorAll('.read-more');
-            
-            // Función para filtrar artículos
+
             function filterArticles(category) {
                 articles.forEach(article => {
-                    if (category === 'all' || article.dataset.category === category) {
-                        article.style.display = 'block';
-                    } else {
-                        article.style.display = 'none';
-                    }
+                    article.style.display = (category === 'all' || article.dataset.category === category) ? 'block' : 'none';
                 });
-                
-                // Actualizar botones activos
+
                 filterButtons.forEach(btn => {
-                    if (btn.dataset.category === category) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
+                    btn.classList.toggle('active', btn.dataset.category === category);
                 });
             }
-            
-            // Función para expandir/contraer artículos
+
             function toggleArticle(button) {
                 const article = button.closest('article');
-                article.classList.toggle('expanded');
-                
-                // Cambiar el texto del botón
-                if (article.classList.contains('expanded')) {
-                    button.textContent = 'Leer menos';
-                } else {
-                    button.textContent = 'Leer más';
-                }
+                const moreText = article.querySelector('.more-text');
+                const isExpanded = moreText.style.display === 'inline';
+
+                moreText.style.display = isExpanded ? 'none' : 'inline';
+                button.textContent = isExpanded ? 'Leer más' : 'Leer menos';
             }
-            
-            // Event listeners para los botones de filtro
+
             filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const category = this.dataset.category;
-                    filterArticles(category);
-                });
+                button.addEventListener('click', () => filterArticles(button.dataset.category));
             });
-            
-            // Event listeners para los enlaces de categoría
+
             categoryLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
-                    const category = this.dataset.category;
-                    filterArticles(category);
-                    
-                    // Desplazarse suavemente al inicio de los artículos
-                    document.querySelector('.content-area').scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                    filterArticles(this.dataset.category);
+                    document.querySelector('.content-area').scrollIntoView({ behavior: 'smooth' });
                 });
             });
-            
-            // Event listener para el enlace "Inicio" (mostrar todos)
-            document.querySelector('.nav-link[data-category="all"]').addEventListener('click', function(e) {
-                e.preventDefault();
-                filterArticles('all');
-            });
-            
-            // Event listeners para los botones "Leer más"
+
             readMoreButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    toggleArticle(this);
-                });
+                button.addEventListener('click', () => toggleArticle(button));
             });
-            
-            // Inicializar mostrando todos los artículos
+
             filterArticles('all');
         });
     </script>
