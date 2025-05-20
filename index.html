@@ -254,11 +254,7 @@ Cierren Eso Ya 🔒</p>
     function filter(category) {
       const articles = document.querySelectorAll('.article');
       articles.forEach(article => {
-        if (article.classList.contains(category)) {
-          article.style.display = 'block';
-        } else {
-          article.style.display = 'none';
-        }
+        article.style.display = article.classList.contains(category) ? 'block' : 'none';
       });
     }
     function shareArticle(button) {
@@ -269,6 +265,7 @@ Cierren Eso Ya 🔒</p>
         alert('Enlace copiado al portapapeles.');
       });
     }
+
     document.addEventListener('DOMContentLoaded', () => {
       const now = new Date();
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -280,9 +277,13 @@ Cierren Eso Ya 🔒</p>
       document.querySelectorAll('.article').forEach(article => {
         const id = article.getAttribute('data-id');
         const viewKey = `views-${id}`;
-        let views = parseInt(localStorage.getItem(viewKey) || '0');
+
+        // Obtener y actualizar las vistas
+        let views = parseInt(localStorage.getItem(viewKey)) || 0;
         views++;
         localStorage.setItem(viewKey, views);
+
+        // Mostrar las vistas
         article.querySelector('.view-count').textContent = views;
       });
     });
